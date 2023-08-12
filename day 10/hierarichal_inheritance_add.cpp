@@ -1,0 +1,74 @@
+/*
+    2. Hierarichal inheritance add :
+
+                            base class
+                                ^
+        ________________________|_______________________
+       |                        |                       |
+       ^                        ^                       ^
+       |                        |                       |
+       |                        |                       |
+Derived class1           Derived class2           Derived class3
+
+
+*/
+
+#include <iostream>
+using namespace std;
+
+class a1
+{
+protected:
+    int a;
+
+public:
+    void getdata()
+    {
+        cout << "Enter Value of a : ";
+        cin >> a;
+    }
+};
+
+class b1 : public a1
+{
+protected:
+    int b;
+
+public:
+    void getdata1()
+    {
+        cout << "Enter Value of b : ";
+        cin >> b;
+    }
+};
+
+class c1 : public a1
+{
+protected:
+    int c;
+
+public:
+    void getdata2()
+    {
+        cout << "Enter Value of c : ";
+        cin >> c;
+    }
+};
+
+class d1 : public b1, public c1
+{
+public:
+    void show()
+    {
+        cout << "Sum is : " << b1::a + b + c;
+    }
+};
+
+int main()
+{
+    d1 done;
+    done.b1::getdata();
+    done.getdata1();
+    done.getdata2();
+    done.show();
+}

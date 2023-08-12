@@ -1,0 +1,69 @@
+
+A). How Many Type of Inheritance ..??
+
+-> There Five Types of Inheritance...
+
+    1. Single Level Inheritance :-
+    2. Multi Level Inheritance :-
+    3. Multiple Inheritance :-
+    4. Hierachial Inheritance :-
+    5. Hybrid Inheritance :-
+
+1. Single Level Inheritance :-
+
+            base class1
+                ^
+                |
+         Derived class1
+
+2. Multi Level Inheritance :-
+
+            base class1
+                ^
+                |
+         Derived class1
+                ^
+                |
+         Derived class2            
+
+3. Multiple Inheritance :-
+
+        base class1    base class2
+           ^             ^
+           |             |
+            \           /
+             \         /
+              \       /
+               \     /
+           Derived class1
+
+4. Hierachial Inheritance :-
+
+                            base class
+                                ^
+        ________________________|_______________________
+       |                        |                       |
+       ^                        ^                       ^
+       |                        |                       |
+       |                        |                       |
+Derived class1           Derived class2           Derived class3          
+
+5. Hybrid Inheritance :-
+
+                            base class
+                                ^
+        ________________________|_______________________
+       |                        ^                       |
+       ^                        .                       ^
+       |                        ^                       |
+       |                        .                       |
+Derived class1                  .                Derived class2
+       ^                        .                       ^
+       |                        ^                       |
+        \                       .                      /
+         \                      .                     /
+          \                     ^                    /
+           \                    .                   /
+            \                   .                  /
+             |<-------  Derived class3  --------->|
+            
